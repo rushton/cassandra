@@ -1,3 +1,6 @@
+Local Patch (Backported from 3.11)
+ * Fix validation of non-frozen UDT cells (CASSANDRA-12916)
+
 3.8, 3.9
  * Fix value skipping with counter columns (CASSANDRA-11726)
  * Fix nodetool tablestats miss SSTable count (CASSANDRA-12205)

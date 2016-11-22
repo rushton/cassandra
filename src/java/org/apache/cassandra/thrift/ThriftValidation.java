@@ -453,8 +453,7 @@ public class ThriftValidation
         try
         {
             LegacyLayout.LegacyCellName cn = LegacyLayout.decodeCellName(metadata, scName, column.name);
-            cn.column.validateCellValue(column.value);
-
+            cn.column.type.validateCellValue(column.value);
         }
         catch (UnknownColumnException e)
         {
